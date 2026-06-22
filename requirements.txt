@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+ultralytics
+scikit-fuzzy
+scipy
+opencv-python-headless
+matplotlib
+numpy
+streamlit
+pandas
+sqlalchemy
+alembic
+pymysql
