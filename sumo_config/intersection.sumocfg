@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <net-file    value="intersection.net.xml"/>
+        <route-files value="vehicles.rou.xml"/>
+    </input>
+    <time>
+        <begin       value="0"/>
+        <end         value="3600"/>
+        <step-length value="1.0"/>
+    </time>
+    <o>
+        <summary-output  value="../output/summary.xml"/>
+        <tripinfo-output value="../output/tripinfo.xml"/>
+        <queue-output    value="../output/queue.xml"/>
+    </o>
+    <processing>
+        <time-to-teleport    value="300"/>
+        <collision.action    value="warn"/>
+    </processing>
+    <report>
+        <verbose     value="false"/>
+        <no-warnings value="true"/>
+        <log         value="../logs/sumo_run.log"/>
+    </report>
+    <gui_only>
+        <start       value="true"/>
+        <delay       value="50"/>
+        <window-size value="1100,750"/>
+        <window-pos  value="100,50"/>
+    </gui_only>
+</configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges>
+    <!-- Jalan MASUK ke persimpangan (4 arah) -->
+    <!-- numLanes=2: lajur 0=lurus, lajur 1=belok kiri -->
+    <edge id="E_N_in"  from="J_N"      to="J_center" numLanes="2" speed="13.89" priority="12"/>
+    <edge id="E_S_in"  from="J_S"      to="J_center" numLanes="2" speed="13.89" priority="12"/>
+    <edge id="E_E_in"  from="J_E"      to="J_center" numLanes="2" speed="13.89" priority="12"/>
+    <edge id="E_W_in"  from="J_W"      to="J_center" numLanes="2" speed="13.89" priority="12"/>
+
+    <!-- Jalan KELUAR dari persimpangan (4 arah) -->
+    <edge id="E_N_out" from="J_center" to="J_N"      numLanes="2" speed="13.89" priority="12"/>
+    <edge id="E_S_out" from="J_center" to="J_S"      numLanes="2" speed="13.89" priority="12"/>
+    <edge id="E_E_out" from="J_center" to="J_E"      numLanes="2" speed="13.89" priority="12"/>
+    <edge id="E_W_out" from="J_center" to="J_W"      numLanes="2" speed="13.89" priority="12"/>
+</edges>

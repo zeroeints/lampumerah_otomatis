@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tlLogics>
+    <tlLogic id="J_center" type="static" programID="adaptive_fuzzy" offset="0">
+        <!--
+            Urutan koneksi (sesuai con.xml):
+            0: N→S  1: N→E  2: S→N  3: S→W  4: E→W  5: E→S  6: W→E  7: W→N
+
+            Fase 0: NS HIJAU  (N→S, N→E, S→N, S→W = GGGG) | EW MERAH (E→W, E→S, W→E, W→N = rrrr)
+            Fase 1: NS KUNING (yyyy) | EW MERAH (rrrr)
+            Fase 2: EW HIJAU  (NS MERAH = rrrr) | EW HIJAU (GGGG)
+            Fase 3: EW KUNING (rrrr) | EW KUNING (yyyy)
+        -->
+        <phase duration="30" state="GGGGrrrr" name="NS_GREEN"/>
+        <phase duration="3"  state="yyyyrrrr" name="NS_YELLOW"/>
+        <phase duration="30" state="rrrrGGGG" name="EW_GREEN"/>
+        <phase duration="3"  state="rrrryyyy" name="EW_YELLOW"/>
+    </tlLogic>
+</tlLogics>

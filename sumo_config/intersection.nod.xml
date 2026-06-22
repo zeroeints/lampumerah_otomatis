@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <!-- Persimpangan pusat dengan lampu lalu lintas -->
+    <node id="J_center" x="0.00"    y="0.00"    type="traffic_light"/>
+    <!-- Ujung lengan jalan (batas area simulasi) -->
+    <node id="J_N"      x="0.00"    y="200.00"  type="dead_end"/>
+    <node id="J_S"      x="0.00"    y="-200.00" type="dead_end"/>
+    <node id="J_E"      x="200.00"  y="0.00"    type="dead_end"/>
+    <node id="J_W"      x="-200.00" y="0.00"    type="dead_end"/>
+</nodes>
