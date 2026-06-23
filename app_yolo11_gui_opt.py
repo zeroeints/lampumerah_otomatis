@@ -332,7 +332,7 @@ def main() -> None:
 
     with st.sidebar:
         st.header("Pengaturan")
-        model_path = st.text_input("Path model YOLO11", value="best.pt")
+        model_path = st.text_input("Path model YOLO11", value="best (2).pt")
         conf = st.slider("Confidence", min_value=0.10, max_value=0.95, value=0.50, step=0.05)
         frame_stride = st.number_input("Ambil setiap N frame", min_value=1, max_value=20, value=3, step=1)
         max_frames = st.number_input("Maks frame per video", min_value=30, max_value=5000, value=600, step=30)
